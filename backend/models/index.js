@@ -7,7 +7,7 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-db.User = require('./User');
+db.User = require('./user');
 db.category = require('./category')(sequelize, DataTypes);
 db.SubCategory = require('./SubCategory')(sequelize, DataTypes);
 db.MasterProduct = require('./MasterProduct')(sequelize, DataTypes);
