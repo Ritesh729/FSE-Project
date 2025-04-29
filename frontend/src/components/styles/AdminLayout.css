@@ -1,0 +1,13 @@
+/* src/components/AdminLayout.css
+.admin-layout {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .admin-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+  }
+   */

@@ -1,0 +1,150 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #e3f2f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
+.login-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  width: 900px;
+  max-width: 95%;
+  display: flex;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+
+.login-form {
+  flex: 1;
+  padding: 60px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.login-form h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input {
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border 0.2s ease;
+}
+
+.login-form input:focus {
+  border-color: #26c6da;
+  outline: none;
+}
+
+
+.login-form button {
+  padding: 14px;
+  background-color: #26c6da;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #00acc1;
+}
+
+
+.login-form p {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #444;
+}
+
+.login-form p span {
+  color: #26c6da;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.login-form p span:hover {
+  color: #008fa3;
+}
+
+
+.login-form a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #26c6da;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.login-form a:hover {
+  color: #008fa3;
+}
+
+
+.illustration {
+  flex: 1;
+  background: linear-gradient(135deg, #c1f0f6, #d8f7fc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration img {
+  width: 80%;
+  max-width: 350px;
+  animation: float 6s ease-in-out infinite;
+}
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .illustration {
+    display: none;
+  }
+
+  .login-form {
+    padding: 40px 25px;
+  }
+
+  .login-form h2 {
+    font-size: 26px;
+  }
+}
