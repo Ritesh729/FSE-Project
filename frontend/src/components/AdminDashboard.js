@@ -11,7 +11,7 @@ const AdminDashboard = () => {
 
   useEffect(() => {
     
-    fetch('http://localhost:5000/api/categories/count')
+    fetch('https://fse-project.onrender.com/api/categories/count')
       .then((res) => res.json())
       .then((data) => {
         console.log('API Response:', data); 

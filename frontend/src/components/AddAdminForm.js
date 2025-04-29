@@ -23,7 +23,7 @@ function AddAdminForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:5000/api/admin-features/add-admin', {
+      const res = await fetch('https://fse-project.onrender.com/api/admin-features/add-admin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

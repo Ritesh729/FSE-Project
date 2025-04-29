@@ -25,7 +25,7 @@ const AddCategory = () => {
     formData.append("category_image", image); 
 
     try {
-      const response = await fetch("http://localhost:5000/api/categories", {
+      const response = await fetch("https://fse-project.onrender.com/api/categories", {
         method: "POST",
         body: formData,
       });

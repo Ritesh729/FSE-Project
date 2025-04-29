@@ -5,7 +5,7 @@ const Category = () => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/categories')
+    fetch('https://fse-project.onrender.com/api/categories')
       .then((res) => res.json())
       .then((data) => setCategories(data))
       .catch((err) => console.error('Error fetching categories:', err));
@@ -18,7 +18,7 @@ const Category = () => {
         {categories.map((cat) => (
           <div className="category-card" key={cat.id}>
             <img
-              src={`http://localhost:5000/${cat.category_image}`}
+              src={`https://fse-project.onrender.com/${cat.category_image}`}
               alt={cat.category_name}
               className="category-image"
             />

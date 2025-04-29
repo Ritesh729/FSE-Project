@@ -23,7 +23,7 @@ function CategoryForm({ onAdd }) {
       data.append(key, formData[key]);
     }
 
-    const res = await fetch('http://localhost:5000/api/categories', {
+    const res = await fetch('https://fse-project.onrender.com/api/categories', {
       method: 'POST',
       body: data
     });
